@@ -1,16 +1,24 @@
-## Hi there 👋
+## szymsstore — prosty sklep (szkic)
 
-<!--
-**szymsstore/szymsstore** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+To repozytorium zawiera prostą, statyczną stronę sklepu o nazwie szymsstore.
 
-Here are some ideas to get you started:
+Pliki stworzone:
+- `index.html` — strona główna z listą produktów
+- `styles.css` — podstawowe style
+- `script.js` — skrypt renderujący produkty z `products.json`
+- `products.json` — przykładowe produkty
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Uruchomienie lokalne:
+
+1. Otwórz `index.html` bezpośrednio w przeglądarce lub uruchom prosty serwer:
+
+```
+python3 -m http.server 8000
+```
+
+2. Wejdź na http://localhost:8000
+
+Co dalej:
+- Dodanie koszyka, backendu, płatności i panelu administracyjnego.
+
+Jeśli chcesz, mogę dodać te funkcje krok po kroku.
