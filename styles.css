@@ -63,3 +63,39 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .hero-title.old-english {
   font-size: 70px;
 }
+.site-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.site-header::before,
+.site-header::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  opacity: 0.18;
+  pointer-events: none;
+  background:
+    repeating-radial-gradient(
+      circle at center,
+      transparent 0 22px,
+      rgba(255,255,255,0.8) 23px 24px
+    ),
+    repeating-conic-gradient(
+      from 0deg,
+      transparent 0deg 14deg,
+      rgba(255,255,255,0.7) 15deg 16deg
+    );
+  border-radius: 50%;
+}
+
+.site-header::before {
+  left: -100px;
+  top: -100px;
+}
+
+.site-header::after {
+  right: -100px;
+  top: -100px;
+}
