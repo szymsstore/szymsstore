@@ -2,7 +2,7 @@
   {
     "id": "t1",
     "name": "T-shirt Classic White – biały minimalistyczny",
-    "description": "Klasyczny biały T-shirt premium wykonany z miękkiej bawełny. Minimalistyczny krój bez nadruków i logotypów, idealny do codziennych stylizacji.",
+    "description": "Klasyczny biały T-shirt  wykonany z miękkiej bawełny. Minimalistyczny krój bez nadruków i logotypów, idealny do codziennych stylizacji.",
     "price": 99,
     "category": "tshirt",
     "image": "https://picsum.photos/seed/t1/600/600?grayscale"
@@ -10,7 +10,7 @@
   {
     "id": "t2",
     "name": "T-shirt Classic Black – czarny minimalistyczny",
-    "description": "Czarny minimalistyczny T-shirt premium z miękkiej bawełny. Dopasowany krój i prosty design bez zbędnych napisów oraz logotypów.",
+    "description": "Czarny minimalistyczny T-shirt  z miękkiej bawełny. Dopasowany krój i prosty design bez zbędnych napisów oraz logotypów.",
     "price": 99,
     "category": "tshirt",
     "image": "https://picsum.photos/seed/t2/600/600?grayscale"
@@ -18,15 +18,15 @@
   {
     "id": "t3",
     "name": "T-shirt Oversize – minimalistyczny",
-    "description": "Minimalistyczny T-shirt oversize o luźnym kroju. Komfortowy fason inspirowany nowoczesną klasyką i prostą modą premium.",
+    "description": "Minimalistyczny T-shirt oversize o luźnym kroju. Komfortowy fason inspirowany nowoczesną klasyką i prostą modą .",
     "price": 119,
     "category": "tshirt",
     "image": "https://picsum.photos/seed/t3/600/600?grayscale"
   },
   {
     "id": "h1",
-    "name": "Bluza Hoodie Czarna – premium",
-    "description": "Czarna bluza z kapturem premium wykonana z grubszej dzianiny. Minimalistyczny fason bez logo i nadruków, idealny na co dzień.",
+    "name": "Bluza Hoodie Czarna – ",
+    "description": "Czarna bluza z kapturem  wykonana z grubszej dzianiny. Minimalistyczny fason bez logo i nadruków, idealny na co dzień.",
     "price": 259,
     "category": "hoodie",
     "image": "https://picsum.photos/seed/h1/600/600?grayscale"
@@ -34,7 +34,7 @@
   {
     "id": "h2",
     "name": "Bluza Hoodie Szara – minimalistyczna",
-    "description": "Szara bluza z kapturem o eleganckim, minimalistycznym kroju. Uniwersalny model premium bez zbędnych nadruków i logotypów.",
+    "description": "Szara bluza z kapturem o eleganckim, minimalistycznym kroju. Uniwersalny model  bez zbędnych nadruków i logotypów.",
     "price": 259,
     "category": "hoodie",
     "image": "https://picsum.photos/seed/h2/600/600?grayscale"
