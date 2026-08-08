@@ -99,7 +99,7 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
   right: -100px;
   top: -100px;
 }
-/* Mroczna, chaotyczna pajęczyna w nagłówku */
+/* REALISTYCZNA, CHAOTYCZNA PAJĘCZYNA */
 .site-header {
   position: relative;
   overflow: hidden;
@@ -108,37 +108,80 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .site-header::before {
   content: "";
   position: absolute;
-  inset: 0;
+  left: -5%;
+  top: -80px;
+  width: 110%;
+  height: 260px;
   pointer-events: none;
   opacity: 0.28;
-  background-image:
-    linear-gradient(118deg, transparent 0 12%, rgba(255,255,255,.55) 12.1%, transparent 12.4%),
-    linear-gradient(73deg, transparent 0 27%, rgba(255,255,255,.45) 27.1%, transparent 27.4%),
-    linear-gradient(142deg, transparent 0 43%, rgba(255,255,255,.5) 43.1%, transparent 43.4%),
-    linear-gradient(91deg, transparent 0 61%, rgba(255,255,255,.4) 61.1%, transparent 61.4%),
-    linear-gradient(163deg, transparent 0 76%, rgba(255,255,255,.45) 76.1%, transparent 76.4%),
-    linear-gradient(32deg, transparent 0 88%, rgba(255,255,255,.35) 88.1%, transparent 88.4%);
-  mix-blend-mode: screen;
+
+  background:
+    radial-gradient(ellipse 75% 95% at 12% 15%,
+      transparent 0 18%,
+      rgba(255,255,255,.55) 18.2% 18.5%,
+      transparent 18.8% 31%,
+      rgba(255,255,255,.42) 31.2% 31.5%,
+      transparent 31.8% 45%,
+      rgba(255,255,255,.35) 45.2% 45.5%,
+      transparent 45.8%),
+
+    radial-gradient(ellipse 80% 90% at 48% 5%,
+      transparent 0 20%,
+      rgba(255,255,255,.45) 20.2% 20.5%,
+      transparent 20.8% 35%,
+      rgba(255,255,255,.38) 35.2% 35.5%,
+      transparent 35.8% 51%,
+      rgba(255,255,255,.30) 51.2% 51.5%,
+      transparent 51.8%),
+
+    radial-gradient(ellipse 85% 100% at 88% 12%,
+      transparent 0 17%,
+      rgba(255,255,255,.5) 17.2% 17.5%,
+      transparent 17.8% 29%,
+      rgba(255,255,255,.4) 29.2% 29.5%,
+      transparent 29.8% 43%,
+      rgba(255,255,255,.3) 43.2% 43.5%,
+      transparent 43.8%);
+
+  transform: rotate(-2deg);
 }
 
 .site-header::after {
   content: "";
   position: absolute;
-  inset: -20px 0;
+  inset: -40px 0 -20px;
   pointer-events: none;
-  opacity: 0.22;
+  opacity: 0.25;
+
   background:
-    repeating-linear-gradient(
-      8deg,
-      transparent 0 28px,
-      rgba(255,255,255,.35) 29px,
-      transparent 30px 55px
-    );
-  transform: skewX(-18deg) rotate(-2deg);
-  mix-blend-mode: screen;
+    linear-gradient(18deg,
+      transparent 0 18%,
+      rgba(255,255,255,.5) 18.1% 18.3%,
+      transparent 18.4% 100%),
+
+    linear-gradient(67deg,
+      transparent 0 34%,
+      rgba(255,255,255,.42) 34.1% 34.3%,
+      transparent 34.4% 100%),
+
+    linear-gradient(112deg,
+      transparent 0 52%,
+      rgba(255,255,255,.45) 52.1% 52.3%,
+      transparent 52.4% 100%),
+
+    linear-gradient(151deg,
+      transparent 0 71%,
+      rgba(255,255,255,.4) 71.1% 71.3%,
+      transparent 71.4% 100%),
+
+    linear-gradient(174deg,
+      transparent 0 86%,
+      rgba(255,255,255,.35) 86.1% 86.3%,
+      transparent 86.4% 100%);
+
+  transform: rotate(1deg);
 }
 
-/* Zawartość nagłówka nad pajęczyną */
 .site-header > * {
   position: relative;
   z-index: 2;
