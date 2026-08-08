@@ -1,4 +1,4 @@
-<title>```html
+```html
 <!doctype html>
 <html lang="pl">
 <head>
@@ -14,20 +14,23 @@
   <link rel="canonical" href="https://szymsstore.github.io/szymsstore/">
 
   <meta property="og:title" content="SzymsStore – minimalistyczna odzież">
-  <meta property="og:description" content="Odkryj minimalistyczne T-shirty, bluzy, SzymsStore. Klasyczny design i ponadczasowy styl.">
+  <meta property="og:description" content="Odkryj minimalistyczne T-shirty i bluzy SzymsStore. Klasyczny design i ponadczasowy styl.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://szymsstore.github.io/szymsstore/">
 
   <meta name="theme-color" content="#000000">
 
+  <!-- Logo / favicon strony -->
+  <link rel="icon" type="image/png" href="logo.png">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
-
-
 <body>
+
   <header class="site-header">
     <div class="container header-row">
+
       <div class="brand">SzymsStore</div>
 
       <div class="search">
@@ -40,6 +43,7 @@
       </div>
 
       <div class="header-actions">
+
         <button id="fav-toggle" class="icon-btn" aria-label="Ulubione">
           ❤ <span id="fav-count" class="badge">0</span>
         </button>
@@ -47,48 +51,91 @@
         <button id="cart-toggle" class="icon-btn" aria-label="Koszyk">
           🛒 <span id="cart-count" class="badge">0</span>
         </button>
+
       </div>
     </div>
 
     <nav class="container categories-row" aria-label="Kategorie produktów">
-      <button class="cat-btn active" data-cat="all">Wszystkie</button>
-      <button class="cat-btn" data-cat="tshirt">T-shirty</button>
-      <button class="cat-btn" data-cat="hoodie">Bluzy</button>
-      
+
+      <button class="cat-btn active" data-cat="all">
+        Wszystkie
+      </button>
+
+      <button class="cat-btn" data-cat="tshirt">
+        T-shirty
+      </button>
+
+      <button class="cat-btn" data-cat="hoodie">
+        Bluzy
+      </button>
+
     </nav>
   </header>
 
+
   <main>
+
     <section class="hero">
       <div class="container">
-        <h1 class="hero-title">SzymsStore</h1>
+
+        <h1 class="hero-title">
+          SzymsStore
+        </h1>
 
         <p class="hero-sub">
-          t-shirty i bluzy 
-         
+          Klasyczne t-shirty i bluzy w nowoczesnym,
+          czarno-białym stylu. Prosty design bez zbędnych
+          napisów i logotypów.
         </p>
+
       </div>
     </section>
 
-    <section id="products" class="container products" aria-labelledby="products-title">
-      <h2 id="products-title">Odzież SzymsStore</h2>
+
+    <section
+      id="products"
+      class="container products"
+      aria-labelledby="products-title"
+    >
+
+      <h2 id="products-title">
+        Odzież SzymsStore
+      </h2>
 
       <p class="section-description">
-        Odkryj minimalistyczne ubrania stworzone dla osób ceniących klasyczny
-        styl, prostotę i ponadczasowy design.
+        Odkryj minimalistyczne ubrania stworzone dla osób
+        ceniących klasyczny styl, prostotę i ponadczasowy design.
       </p>
 
+
       <div class="tools-row">
+
         <div id="sort-wrap">
-          <label for="sort">Sortuj produkty:</label>
+
+          <label for="sort">
+            Sortuj produkty:
+          </label>
 
           <select id="sort">
-            <option value="popular">Popularne</option>
-            <option value="price-asc">Cena rosnąco</option>
-            <option value="price-desc">Cena malejąco</option>
+
+            <option value="popular">
+              Popularne
+            </option>
+
+            <option value="price-asc">
+              Cena rosnąco
+            </option>
+
+            <option value="price-desc">
+              Cena malejąco
+            </option>
+
           </select>
+
         </div>
+
       </div>
+
 
       <div
         id="product-list"
@@ -96,10 +143,19 @@
         aria-live="polite"
         aria-label="Lista produktów"
       ></div>
+
     </section>
 
-    <section id="contact" class="container contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Kontakt – SzymsStore</h2>
+
+    <section
+      id="contact"
+      class="container contact"
+      aria-labelledby="contact-title"
+    >
+
+      <h2 id="contact-title">
+        Kontakt – SzymsStore
+      </h2>
 
       <p>
         Masz pytania dotyczące produktów lub zamówienia?
@@ -111,57 +167,125 @@
           szymsstore@gmail.com
         </a>
       </p>
+
     </section>
+
   </main>
 
-  <div id="cart-modal" class="modal hidden" aria-hidden="true">
-    <div class="modal-panel">
-      <header class="modal-header">
-        <h2>Koszyk SzymsStore</h2>
 
-        <button id="close-cart" class="close-btn" aria-label="Zamknij koszyk">
+  <!-- KOSZYK -->
+
+  <div
+    id="cart-modal"
+    class="modal hidden"
+    aria-hidden="true"
+  >
+
+    <div class="modal-panel">
+
+      <header class="modal-header">
+
+        <h2>
+          Koszyk SzymsStore
+        </h2>
+
+        <button
+          id="close-cart"
+          class="close-btn"
+          aria-label="Zamknij koszyk"
+        >
           ✕
         </button>
+
       </header>
 
-      <div id="cart-items" class="cart-items"></div>
+
+      <div
+        id="cart-items"
+        class="cart-items"
+      ></div>
+
 
       <div class="cart-summary">
+
         <div>
           Razem:
-          <strong id="cart-total">0 zł</strong>
+          <strong id="cart-total">
+            0 zł
+          </strong>
         </div>
+
 
         <div class="cart-actions">
-          <button id="checkout" class="btn primary">
+
+          <button
+            id="checkout"
+            class="btn primary"
+          >
             Przejdź do płatności
           </button>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
 
-  <div id="fav-modal" class="modal hidden" aria-hidden="true">
-    <div class="modal-panel">
-      <header class="modal-header">
-        <h2>Ulubione produkty</h2>
 
-        <button id="close-fav" class="close-btn" aria-label="Zamknij ulubione">
+  <!-- ULUBIONE -->
+
+  <div
+    id="fav-modal"
+    class="modal hidden"
+    aria-hidden="true"
+  >
+
+    <div class="modal-panel">
+
+      <header class="modal-header">
+
+        <h2>
+          Ulubione produkty
+        </h2>
+
+        <button
+          id="close-fav"
+          class="close-btn"
+          aria-label="Zamknij ulubione"
+        >
           ✕
         </button>
+
       </header>
 
-      <div id="fav-items" class="product-list"></div>
+
+      <div
+        id="fav-items"
+        class="product-list"
+      ></div>
+
     </div>
+
   </div>
 
+
   <footer class="site-footer">
+
     <div class="container">
-      <p>© SzymsStore</p>
+
+      <p>
+        © SzymsStore – odzież
+      </p>
+
     </div>
+
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
 ```
