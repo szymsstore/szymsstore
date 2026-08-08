@@ -1,73 +1,72 @@
-
 [
   {
     "id": "t1",
-    "name": "T-shirt Classic White",
-    "description": "Bawełniany T-shirt, gładki, bez nadruków.",
+    "name": "T-shirt Classic White – biały minimalistyczny",
+    "description": "Klasyczny biały T-shirt premium wykonany z miękkiej bawełny. Minimalistyczny krój bez nadruków i logotypów, idealny do codziennych stylizacji.",
     "price": 99,
     "category": "tshirt",
     "image": "https://picsum.photos/seed/t1/600/600?grayscale"
   },
   {
     "id": "t2",
-    "name": "T-shirt Classic Black",
-    "description": "Miękki, czarny T-shirt o dopasowanym kroju.",
+    "name": "T-shirt Classic Black – czarny minimalistyczny",
+    "description": "Czarny minimalistyczny T-shirt premium z miękkiej bawełny. Dopasowany krój i prosty design bez zbędnych napisów oraz logotypów.",
     "price": 99,
     "category": "tshirt",
     "image": "https://picsum.photos/seed/t2/600/600?grayscale"
   },
   {
     "id": "t3",
-    "name": "T-shirt Oversize",
-    "description": "Luźniejszy krój, minimalistyczna estetyka.",
+    "name": "T-shirt Oversize – minimalistyczny",
+    "description": "Minimalistyczny T-shirt oversize o luźnym kroju. Komfortowy fason inspirowany nowoczesną klasyką i prostą modą premium.",
     "price": 119,
     "category": "tshirt",
     "image": "https://picsum.photos/seed/t3/600/600?grayscale"
   },
   {
     "id": "h1",
-    "name": "Bluza Hoodie Czarna",
-    "description": "Gruba bluza z kapturem, bez logo.",
+    "name": "Bluza Hoodie Czarna – premium",
+    "description": "Czarna bluza z kapturem premium wykonana z grubszej dzianiny. Minimalistyczny fason bez logo i nadruków, idealny na co dzień.",
     "price": 259,
     "category": "hoodie",
     "image": "https://picsum.photos/seed/h1/600/600?grayscale"
   },
   {
     "id": "h2",
-    "name": "Bluza Hoodie Szara",
-    "description": "Elegancka bluza w odcieniach szarości.",
+    "name": "Bluza Hoodie Szara – minimalistyczna",
+    "description": "Szara bluza z kapturem o eleganckim, minimalistycznym kroju. Uniwersalny model premium bez zbędnych nadruków i logotypów.",
     "price": 259,
     "category": "hoodie",
     "image": "https://picsum.photos/seed/h2/600/600?grayscale"
   },
   {
     "id": "p1",
-    "name": "Spodnie Chino Black",
-    "description": "Klasyczne spodnie chino, lekko dopasowane.",
+    "name": "Spodnie Chino Black – klasyczne",
+    "description": "Klasyczne czarne spodnie chino o lekko dopasowanym kroju. Uniwersalny model do minimalistycznych stylizacji.",
     "price": 199,
     "category": "pants",
     "image": "https://picsum.photos/seed/p1/600/600?grayscale"
   },
   {
     "id": "p2",
-    "name": "Spodnie Jogger",
-    "description": "Wygodne spodnie typu jogger, minimalistyczne wykończenie.",
+    "name": "Spodnie Jogger – minimalistyczne",
+    "description": "Wygodne spodnie jogger o minimalistycznym wykończeniu. Komfortowy fason do codziennych, nowoczesnych stylizacji.",
     "price": 179,
     "category": "pants",
     "image": "https://picsum.photos/seed/p2/600/600?grayscale"
   },
   {
     "id": "c1",
-    "name": "Czapka Beanie Czarna",
-    "description": "Ciepła czapka beanie, gładka bez naszywek.",
+    "name": "Czapka Beanie Czarna – klasyczna",
+    "description": "Klasyczna czarna czapka beanie wykonana z miękkiego materiału. Prosty, minimalistyczny design bez naszywek i logotypów.",
     "price": 69,
     "category": "cap",
     "image": "https://picsum.photos/seed/c1/600/600?grayscale"
   },
   {
     "id": "c2",
-    "name": "Czapka Beanie Szara",
-    "description": "Miękka czapka beanie w neutralnych barwach.",
+    "name": "Czapka Beanie Szara – minimalistyczna",
+    "description": "Szara czapka beanie o prostym, minimalistycznym kroju. Neutralny kolor pasujący do codziennych stylizacji.",
     "price": 69,
     "category": "cap",
     "image": "https://picsum.photos/seed/c2/600/600?grayscale"
