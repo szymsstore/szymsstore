@@ -224,3 +224,6 @@ body {
     background-attachment: fixed;
     background-color: #000;
 }
+.spider-background {
+    display: none !important;
+}
