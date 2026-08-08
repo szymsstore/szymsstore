@@ -58,5 +58,8 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 }
 .old-english {
   font-family: "Old English Text MT", serif;
-  font-size: 60px;
+}
+
+.hero-title.old-english {
+  font-size: 50px;
 }
