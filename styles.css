@@ -237,3 +237,11 @@ body > *:not(.spider-background) {
   position: relative;
   z-index: 1;
 }
+body {
+    background-image: url("spiderweb-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
+}
