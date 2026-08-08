@@ -38,21 +38,5 @@
     "price": 259,
     "category": "hoodie",
     "image": "https://picsum.photos/seed/h2/600/600?grayscale"
-  },
-  {
-    "id": "p1",
-    "name": "Spodnie Chino Black – klasyczne",
-    "description": "Klasyczne czarne spodnie chino o lekko dopasowanym kroju. Uniwersalny model do minimalistycznych stylizacji.",
-    "price": 199,
-    "category": "pants",
-    "image": "https://picsum.photos/seed/p1/600/600?grayscale"
-  },
-  {
-    "id": "p2",
-    "name": "Spodnie Jogger – minimalistyczne",
-    "description": "Wygodne spodnie jogger o minimalistycznym wykończeniu. Komfortowy fason do codziennych, nowoczesnych stylizacji.",
-    "price": 179,
-    "category": "pants",
-    "image": "https://picsum.photos/seed/p2/600/600?grayscale"
   }
 ]
