@@ -110,3 +110,28 @@ body {
         transform: perspective(800px) rotateY(360deg);
     }
 }
+.hero-title {
+    display: inline-block;
+    animation: spin3d 4s linear infinite;
+    transform-style: preserve-3d;
+
+    text-shadow:
+        1px 0 #ddd,
+        2px 0 #bbb,
+        3px 0 #999,
+        4px 0 #777,
+        5px 0 #555,
+        6px 0 #333,
+        7px 0 #222,
+        8px 0 #111;
+}
+
+@keyframes spin3d {
+    0% {
+        transform: perspective(700px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(700px) rotateY(360deg);
+    }
+}
