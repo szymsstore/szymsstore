@@ -76,145 +76,7 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
   height: 260px;
   opacity: 0.18;
   pointer-events: none;
-  background:
-    repeating-radial-gradient(
-      circle at center,
-      transparent 0 22px,
-      rgba(255,255,255,0.8) 23px 24px
-    ),
-    repeating-conic-gradient(
-      from 0deg,
-      transparent 0deg 14deg,
-      rgba(255,255,255,0.7) 15deg 16deg
-    );
-  border-radius: 50%;
-}
 
-.site-header::before {
-  left: -100px;
-  top: -100px;
-}
-
-.site-header::after {
-  right: -100px;
-  top: -100px;
-}
-
-.site-header {
-  position: relative;
-  overflow: hidden;
-}
-
-.site-header::before {
-  content: "";
-  position: absolute;
-  left: -5%;
-  top: -80px;
-  width: 110%;
-  height: 260px;
-  pointer-events: none;
-  opacity: 0.28;
-
-  background:
-    radial-gradient(ellipse 75% 95% at 12% 15%,
-      transparent 0 18%,
-      rgba(255,255,255,.55) 18.2% 18.5%,
-      transparent 18.8% 31%,
-      rgba(255,255,255,.42) 31.2% 31.5%,
-      transparent 31.8% 45%,
-      rgba(255,255,255,.35) 45.2% 45.5%,
-      transparent 45.8%),
-
-    radial-gradient(ellipse 80% 90% at 48% 5%,
-      transparent 0 20%,
-      rgba(255,255,255,.45) 20.2% 20.5%,
-      transparent 20.8% 35%,
-      rgba(255,255,255,.38) 35.2% 35.5%,
-      transparent 35.8% 51%,
-      rgba(255,255,255,.30) 51.2% 51.5%,
-      transparent 51.8%),
-
-    radial-gradient(ellipse 85% 100% at 88% 12%,
-      transparent 0 17%,
-      rgba(255,255,255,.5) 17.2% 17.5%,
-      transparent 17.8% 29%,
-      rgba(255,255,255,.4) 29.2% 29.5%,
-      transparent 29.8% 43%,
-      rgba(255,255,255,.3) 43.2% 43.5%,
-      transparent 43.8%);
-
-  transform: rotate(-2deg);
-}
-
-.site-header::after {
-  content: "";
-  position: absolute;
-  inset: -40px 0 -20px;
-  pointer-events: none;
-  opacity: 0.25;
-
-  background:
-    linear-gradient(18deg,
-      transparent 0 18%,
-      rgba(255,255,255,.5) 18.1% 18.3%,
-      transparent 18.4% 100%),
-
-    linear-gradient(67deg,
-      transparent 0 34%,
-      rgba(255,255,255,.42) 34.1% 34.3%,
-      transparent 34.4% 100%),
-
-    linear-gradient(112deg,
-      transparent 0 52%,
-      rgba(255,255,255,.45) 52.1% 52.3%,
-      transparent 52.4% 100%),
-
-    linear-gradient(151deg,
-      transparent 0 71%,
-      rgba(255,255,255,.4) 71.1% 71.3%,
-      transparent 71.4% 100%),
-
-    linear-gradient(174deg,
-      transparent 0 86%,
-      rgba(255,255,255,.35) 86.1% 86.3%,
-      transparent 86.4% 100%);
-
-  transform: rotate(1deg);
-}
-
-.site-header > * {
-  position: relative;
-  z-index: 2;
-}
-.web-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.site-header > *:not(.web-overlay) {
-  position: relative;
-  z-index: 2;
-}.web-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.site-header > *:not(.web-overlay) {
-  position: relative;
-  z-index: 2;
-}
 
 body {
     background-image: url("spiderweb-bg.png");
@@ -225,5 +87,20 @@ body {
     background-color: #000;
 }
 .spider-background {
+    display: none !important;
+}
+.site-header {
+    background: rgba(5, 5, 5, 0.78);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-header::before,
+.site-header::after,
+.web-overlay {
     display: none !important;
 }
