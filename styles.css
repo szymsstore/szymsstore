@@ -93,12 +93,16 @@ body {
 .hero-title {
     animation: logo-spin 6s linear infinite;
 }
+.hero-title {
+    animation: logo-spin-horizontal 4s linear infinite;
+    transform-style: preserve-3d;
+}
 
-@keyframes logo-spin {
+@keyframes logo-spin-horizontal {
     from {
-        transform: rotate(0deg);
+        transform: rotateY(0deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotateY(360deg);
     }
 }
