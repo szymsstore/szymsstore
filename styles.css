@@ -91,26 +91,6 @@ body {
     display: none !important;
 }
 .hero-title {
-    animation: logo-spin 6s linear infinite;
-}
-.hero-title {
-    animation: logo-spin-horizontal 4s linear infinite;
-    transform-style: preserve-3d;
-}
-.hero-title {
-    animation: spin-one-way 5s linear infinite;
-    transform-style: preserve-3d;
-}
-
-@keyframes spin-one-way {
-    0% {
-        transform: perspective(800px) rotateY(0deg);
-    }
-    100% {
-        transform: perspective(800px) rotateY(360deg);
-    }
-}
-.hero-title {
     display: inline-block;
     animation: spin3d 4s linear infinite;
     transform-style: preserve-3d;
