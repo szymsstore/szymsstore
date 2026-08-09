@@ -98,7 +98,7 @@ body {
     transform-style: preserve-3d;
 }
 .hero-title {
-    animation: spin-one-way 3s linear infinite;
+    animation: spin-one-way 5s linear infinite;
     transform-style: preserve-3d;
 }
 
