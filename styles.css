@@ -90,31 +90,37 @@ body {
     display: flex;
     gap: .5rem;
 }
+.hero-title {
+    display: inline-block;
+    animation: spin3d 5s linear infinite;
+    transform-style: preserve-3d;
 
-.icon-btn {
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.06);
-    color: var(--accent);
-    padding: .5rem .6rem;
-    border-radius: 8px;
-    cursor: pointer;
-    position: relative;
+    color: #fff;
+
+    text-shadow:
+        1px 0 0 #eee,
+        2px 0 0 #ddd,
+        3px 0 0 #ccc,
+        4px 0 0 #aaa,
+        5px 0 0 #888,
+        6px 0 0 #666,
+        7px 0 0 #444,
+        8px 0 0 #333,
+        9px 0 0 #222,
+        10px 0 0 #111,
+        11px 0 0 #080808,
+        12px 0 8px rgba(0,0,0,0.9);
 }
 
-.badge {
-    background: #fff;
-    color: #000;
-    padding: 0 .45rem;
-    border-radius: 999px;
-    margin-left: .4rem;
-    font-weight: 600;
-    font-size: .85rem;
+@keyframes spin3d {
+    from {
+        transform: perspective(700px) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(700px) rotateY(360deg);
+    }
 }
-
-
-/* =========================
-   KATEGORIE
-   ========================= */
 
 .categories-row {
     display: flex;
