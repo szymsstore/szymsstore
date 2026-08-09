@@ -90,7 +90,6 @@ body {
 .web-overlay {
     display: none !important;
 }
-```css
 .hero-title {
     display: inline-block;
     animation: spin3d 4s linear infinite;
