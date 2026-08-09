@@ -381,3 +381,54 @@ body {
         gap: .6rem;
     }
 }
+.logo-3d {
+    position: relative;
+    display: inline-block;
+    width: 420px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: logo3d-spin 5s linear infinite;
+}
+
+.logo-3d span {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    color: white;
+    white-space: nowrap;
+    transform-style: preserve-3d;
+}
+
+.logo-3d span:nth-child(1) { transform: translateZ(-20px); color: #111; }
+.logo-3d span:nth-child(2) { transform: translateZ(-15px); color: #222; }
+.logo-3d span:nth-child(3) { transform: translateZ(-10px); color: #333; }
+.logo-3d span:nth-child(4) { transform: translateZ(-5px);  color: #555; }
+.logo-3d span:nth-child(5) { transform: translateZ(0);    color: #777; }
+.logo-3d span:nth-child(6) { transform: translateZ(5px);  color: #999; }
+.logo-3d span:nth-child(7) { transform: translateZ(10px); color: #bbb; }
+.logo-3d span:nth-child(8) { transform: translateZ(15px); color: #ddd; }
+.logo-3d span:nth-child(9) { transform: translateZ(20px); color: #fff; }
+
+@keyframes logo3d-spin {
+    from {
+        transform: perspective(800px) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(800px) rotateY(360deg);
+    }
+}
+
+@media (max-width: 720px) {
+    .logo-3d {
+        width: 280px;
+        height: 75px;
+    }
+
+    .logo-3d span {
+        font-size: 42px;
+    }
+}
