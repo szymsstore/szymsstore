@@ -402,15 +402,15 @@ body {
     transform-style: preserve-3d;
 }
 
-.logo-3d span:nth-child(1) { transform: translateZ(-20px); color: #111; }
-.logo-3d span:nth-child(2) { transform: translateZ(-15px); color: #222; }
-.logo-3d span:nth-child(3) { transform: translateZ(-10px); color: #333; }
+.logo-3d span:nth-child(1) { transform: translateZ(-20px); color: #fff; }
+.logo-3d span:nth-child(2) { transform: translateZ(-15px); color: #333; }
+.logo-3d span:nth-child(3) { transform: translateZ(-10px); color: #444; }
 .logo-3d span:nth-child(4) { transform: translateZ(-5px);  color: #555; }
-.logo-3d span:nth-child(5) { transform: translateZ(0);    color: #777; }
-.logo-3d span:nth-child(6) { transform: translateZ(5px);  color: #999; }
-.logo-3d span:nth-child(7) { transform: translateZ(10px); color: #bbb; }
-.logo-3d span:nth-child(8) { transform: translateZ(15px); color: #ddd; }
-.logo-3d span:nth-child(9) { transform: translateZ(20px); color: #fff; }
+.logo-3d span:nth-child(5) { transform: translateZ(0);     color: #666; }
+.logo-3d span:nth-child(6) { transform: translateZ(5px);   color: #777; }
+.logo-3d span:nth-child(7) { transform: translateZ(10px);  color: #999; }
+.logo-3d span:nth-child(8) { transform: translateZ(15px);  color: #bbb; }
+.logo-3d span:nth-child(9) { transform: translateZ(20px);  color: #fff; }
 
 @keyframes logo3d-spin {
     from {
